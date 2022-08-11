@@ -1,5 +1,7 @@
 # Tweet counter
 
+[![PyPI version](https://badge.fury.io/py/tweet-counter.svg)](https://pypi.org/project/tweet-counter/)
+
 Calculate the size that Twitter [will consider a tweet to be](https://developer.twitter.com/en/docs/counting-characters).
 
 This is not as advanced as [the official twitter-text libraries](/home/robin/projects/twitter-counter/README.md), but attempts to at least take into account the following:
