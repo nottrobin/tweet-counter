@@ -1,0 +1,26 @@
+#! /usr/bin/env python3
+
+# Standard library
+import argparse
+
+# Local
+from tweet_counter import count_tweet
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='Calculate the size that Twitter will consider a Tweet to be'
+    )
+
+    parser.add_argument(
+        "tweet_text",
+        help='The text of the tweet'
+    )
+
+    args = vars(parser.parse_args())
+
+    print(count_tweet(**args))
+
+
+if __name__ == '__main__':
+    main()
